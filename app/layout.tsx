@@ -26,7 +26,7 @@ const geologica = Geologica({
 export const metadata: Metadata = {
   title: 'Pixa Pay',
   description:
-    'A burner Solana wallet for your meme trading and uncertain interaction.',
+    'A burner Solana wallet for your trading and uncertain interaction.',
   openGraph: {
     locale: 'locale',
     siteName: 'Pixa Pay',
