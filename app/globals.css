@@ -1,21 +1,28 @@
+/* @font-face {
+  font-family: 'Pixelade';
+  src: url('/fonts/PIXELADE.TTF');
+  font-weight: 400;
+} */
+
+@import url('https://fonts.cdnfonts.com/css/pixelade');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #1e1e1e;
+  --foreground: #ffffff;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply text-foreground font-geologica;
+  /* background: var(--background); */
+  background: linear-gradient(
+      180deg,
+      rgba(30, 30, 30, 0) 0%,
+      rgba(244, 0, 0, 0.12) 100%
+    ),
+    #1e1e1e;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
