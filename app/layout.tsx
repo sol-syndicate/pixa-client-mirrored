@@ -1,3 +1,5 @@
+import { ENV } from '@/lib/constants/env.constant'
+import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Geologica, IBM_Plex_Mono, Press_Start_2P } from 'next/font/google'
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
     locale: 'locale',
     siteName: 'Pixa',
     type: 'website',
-    images: { url: 'https://pixa.vercel.app/logo.png' },
+    images: { url: 'pixa-pay.vercel.app/full-logo.png' },
   },
   twitter: {
     card: 'summary_large_image',
@@ -47,7 +49,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning suppressContentEditableWarning>
-      {/* <GoogleTagManager gtmId={ENV.GOOGLE_ANALYTICS || ''} /> */}
+      <GoogleTagManager gtmId={ENV.GOOGLE_ANALYTICS || ''} />
       <body
         className={`${pressStart.variable} ${geologica.variable} ${ibmPlexMono.variable} antialiased`}
       >
