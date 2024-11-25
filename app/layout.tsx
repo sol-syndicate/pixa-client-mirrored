@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     site: 'pixa',
     title: 'Pixa',
   },
-  keywords: ['web3', 'dex', 'swap', 'meme', 'dex', 'wallet', 'burner'],
+  keywords: ['web3', 'dex', 'swap', 'meme', 'dex', 'wallet', 'burner', 'defi'],
 }
 
 export default function RootLayout({
