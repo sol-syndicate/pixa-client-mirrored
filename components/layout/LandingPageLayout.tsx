@@ -25,9 +25,9 @@ export default function LandingPageLayout({ children }: Props) {
           <NavIcon className='md:hidden' />
           <div className='hidden md:flex items-center gap-[36px]'>
             <div className='flex items-center gap-3'>
-              <Link href={'#!'} className='text-[12px]'>
+              {/* <Link href={'#!'} className='text-[12px]'>
                 White Paper
-              </Link>
+              </Link> */}
               <Link
                 href={'#features'}
                 onClick={(e) => {
@@ -39,9 +39,9 @@ export default function LandingPageLayout({ children }: Props) {
               >
                 Features
               </Link>
-              <Link href={'#!'} className='text-[12px]'>
+              {/* <Link href={'#!'} className='text-[12px]'>
                 FAQs
-              </Link>
+              </Link> */}
             </div>
 
             <Button

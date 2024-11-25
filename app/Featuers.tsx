@@ -4,8 +4,7 @@ const Features = () => {
   return (
     <div className='flex flex-col gap-[24px]' id='features'>
       <p className='text-[24px] md:text-[36px] font-pixelade font-bold md:font-normal'>
-        Experience risk-free meme trading without compromising your main
-        portfolio.
+        Experience risk-free trading without compromising your main portfolio.
       </p>
 
       {/* large display featuers */}
@@ -26,7 +25,7 @@ const Features = () => {
 
           {/* meme coin tracker section */}
           <div className='flex items-center bg-[#161616] h-[200px] rounded-[12px] p-6 relative'>
-            <p className='text-white'>Meme Coin Tracker</p>
+            <p className='text-white'>Token Tracker</p>
             <Image
               src='/images/map.png'
               alt='map'
@@ -144,9 +143,7 @@ const Features = () => {
 
         {/* meme coin tracker */}
         <div className='flex items-center justify-center h-[160px] w-full bg-[#161616] p-6 rounded-[12px] relative'>
-          <p className='text-white leading-[28px] w-[100px]'>
-            Meme Coin Tracker
-          </p>
+          <p className='text-white leading-[28px] w-[100px]'>Token Tracker</p>
           <Image
             src='/images/map.png'
             alt='map'

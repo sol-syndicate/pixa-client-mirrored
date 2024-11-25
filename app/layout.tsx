@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Geologica, IBM_Plex_Mono, Press_Start_2P } from 'next/font/google'
 import './globals.css'
@@ -45,11 +46,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' suppressHydrationWarning suppressContentEditableWarning>
+      {/* <GoogleTagManager gtmId={ENV.GOOGLE_ANALYTICS || ''} /> */}
       <body
         className={`${pressStart.variable} ${geologica.variable} ${ibmPlexMono.variable} antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   )

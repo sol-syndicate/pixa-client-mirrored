@@ -1,4 +1,4 @@
-import { WaitListService } from '@/lib/services/waitlist.srevice'
+import { WaitListService } from '@/lib/services/waitlist.service'
 
 type WaitlistPayload = {
   name: string
@@ -8,7 +8,6 @@ type WaitlistPayload = {
 export const POST = async (req: Request) => {
   try {
     const body = (await req.json()) as WaitlistPayload
-
     if (
       !body.name ||
       typeof body.name !== 'string' ||
@@ -21,7 +20,12 @@ export const POST = async (req: Request) => {
       return Response.json({ error: 'Invalid email' }, { status: 400 })
     }
 
-    return Response.json({ message: 'Success', data: body })
+    const waitlist = await WaitListService.joinWaitlist(body)
+    if (!waitlist.success) {
+      return Response.json({ message: waitlist.message }, { status: 400 })
+    }
+
+    return Response.json({ message: waitlist.message })
   } catch (error: any) {
     return Response.json(
       { error: error?.message || 'something went wrong' },
@@ -30,6 +34,7 @@ export const POST = async (req: Request) => {
   }
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const GET = async (req: Request) => {
   try {
     const waitlist = await WaitListService.getWaitList()

@@ -1,5 +1,5 @@
 import { nanoid } from 'nanoid'
-import { apiResponse } from '../api.helpers'
+import { apiResponse } from '../http.lib'
 import { supabaseClient } from '../superbase_client.util'
 
 export class WaitListService {
@@ -20,14 +20,18 @@ export class WaitListService {
         return apiResponse(false, 'user already on waitlist', undefined)
 
       const { data: waitlist, error } = await supabaseClient
-        .from('blink')
+        .from('waitlist')
         .insert({ id: nanoid(21), ...payload })
         .select()
 
       if (error)
-        return apiResponse(false, 'failed to save blink', error.message)
+        return apiResponse(
+          false,
+          error.message || 'failed to join waitlist',
+          error.message
+        )
 
-      return apiResponse(true, 'blink information', waitlist![0])
+      return apiResponse(true, 'waitlist information', waitlist![0])
     } catch (error: any) {
       console.log(`joinWaitlist :`, error.message)
       return apiResponse(
