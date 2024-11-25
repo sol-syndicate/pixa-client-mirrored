@@ -31,7 +31,11 @@ export const metadata: Metadata = {
     locale: 'locale',
     siteName: 'Pixa Pay',
     type: 'website',
-    images: { url: 'https://pixa-pay.vercel.app/full-logo.png' },
+    images: {
+      url: 'https://pixa-pay.vercel.app/full-logo.png',
+      alt: 'Pixa Logo',
+      type: 'image/png',
+    },
   },
   twitter: {
     card: 'summary_large_image',
