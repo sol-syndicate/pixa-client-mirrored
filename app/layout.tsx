@@ -24,12 +24,12 @@ const geologica = Geologica({
 })
 
 export const metadata: Metadata = {
-  title: 'Pixa Pay',
+  title: 'Pixa',
   description:
     'A burner Solana wallet for your trading and uncertain interaction.',
   openGraph: {
     locale: 'locale',
-    siteName: 'Pixa Pay',
+    siteName: 'Pixa',
     type: 'website',
     images: {
       url: 'https://pixa-pay.vercel.app/full-logo.png',

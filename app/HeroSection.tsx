@@ -67,7 +67,7 @@ const HeroSection = () => {
         <p className='text-[10px] md:text-[12px]'>
           The Only Wallet You Can Burn Without Feeling the Heat.
         </p>
-        <p className='text-[36px] md:text-[64px] font-pixelade font-bold'>
+        <p className='text-[24px] md:text-[36px] font-pressStart font-bold'>
           Trade Tokens, Not Dreams
         </p>
       </div>

@@ -7,7 +7,7 @@ interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
 const Button = ({ children, ...props }: Props) => {
   return (
     <button
-      className='text-[16px] font-pixelade font-bold bg-primary border-[4px] rounded-[12px] px-[12px] py-[6px] border-white'
+      className='text-[16px] font-pressStart bg-primary border-[4px] rounded-[12px] px-[12px] py-[6px] border-white focus:outline-none'
       style={{
         boxShadow: '0px 6px 0px #FFFFFF',
       }}

@@ -14,7 +14,7 @@ const Input = ({ ref, icon, ...props }: Props) => {
       {icon}
       <input
         type='text'
-        className='w-full bg-background text-[16px] font-pixelade font-bold focus:outline-none'
+        className='w-full bg-background text-[16px] font-pressStart focus:outline-none'
         ref={ref}
         {...props}
       />

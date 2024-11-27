@@ -92,7 +92,7 @@ const Features = () => {
       </div>
       {/* end of large display features */}
 
-      <div className='grid grid-cols-2 gap-7 lg:hidden font-pressStart text-[#1E1E1E] text-[11px] md:text-[12px]'>
+      <div className='grid grid-cols-2 md:grid-cols-3 gap-7 lg:hidden font-pressStart text-[#1E1E1E] text-[11px] md:text-[12px]'>
         {/* dispose wallet */}
         <div className='h-[160px] w-full bg-[#FABC04] p-6 rounded-[12px] relative'>
           <p className='w-[112px]'>Disposable Wallet</p>
@@ -147,8 +147,8 @@ const Features = () => {
           <Image
             src='/images/map.png'
             alt='map'
-            height={128}
-            width={131}
+            height={120}
+            width={111}
             className='absolute bottom-0 right-0 select-none pointer-events-none'
           />
         </div>
