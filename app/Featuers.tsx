@@ -3,7 +3,7 @@ import Image from 'next/image'
 const Features = () => {
   return (
     <div className='flex flex-col gap-[24px]' id='features'>
-      <p className='text-[24px] md:text-[36px] font-pixelade font-bold md:font-normal'>
+      <p className='text-[24px] md:text-[36px] leading-[32px] font-pixelade md:text-center'>
         Experience risk-free trading without compromising your main portfolio.
       </p>
 
