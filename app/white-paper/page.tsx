@@ -41,7 +41,7 @@ const WhitePaperPage = () => {
           isLoading || hasError ? 'hidden' : 'block'
         }`}
         onLoad={(e) => {
-          console.log('iframe loaded')
+          console.log('iframe loaded', e)
           setIsLoading(false)
         }}
         onError={(e) => {
