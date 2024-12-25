@@ -17,7 +17,8 @@ export default function LandingPageLayout({ children }: Props) {
 
   return (
     <div>
-      <div className='flex flex-col gap-[36px] md:gap-[98px] bg-[url("/images/mobile-swatch.png")] md:bg-[url("/images/swatch.png")] min-h-screen bg-cover bg-center bg-no-repeat'>
+      {/* gap-[36px] md:gap-[98px] */}
+      <div className='flex flex-col bg-[url("/images/mobile-swatch.png")] md:bg-[url("/images/swatch.png")] min-h-screen bg-cover bg-center bg-no-repeat'>
         {/* App Bar */}
         <LandingPageAppBar />
         {/* End of App Bar */}

@@ -20,36 +20,38 @@ const WhitePaperPage = () => {
 
   return (
     <LandingPageLayout>
-      {isLoading && !hasError && (
-        <div className='flex items-center justify-center flex-col gap-3'>
-          <div className='animate-spin rounded-full h-12 w-12 border-b-2 border-white' />
-          <p className='text-white font-pixelade text-3xl'>
-            Loading White Paper...
-          </p>
-        </div>
-      )}
-      {hasError && (
-        <div className='flex items-center justify-center flex-col gap-3'>
-          <p className='text-white font-pixelade text-3xl'>
-            Failed to load White Paper. Please try again.
-          </p>
-        </div>
-      )}
-      <iframe
-        src='/Pixa White Paper.pdf'
-        className={`w-full h-screen ${
-          isLoading || hasError ? 'hidden' : 'block'
-        }`}
-        onLoad={(e) => {
-          console.log('iframe loaded', e)
-          setIsLoading(false)
-        }}
-        onError={(e) => {
-          console.log('iframe error:', e)
-          setIsLoading(false)
-          setHasError(true)
-        }}
-      />
+      <div className='mt-5'>
+        {isLoading && !hasError && (
+          <div className='flex items-center justify-center flex-col gap-3'>
+            <div className='animate-spin rounded-full h-12 w-12 border-b-2 border-white' />
+            <p className='text-white font-pixelade text-3xl'>
+              Loading White Paper...
+            </p>
+          </div>
+        )}
+        {hasError && (
+          <div className='flex items-center justify-center flex-col gap-3'>
+            <p className='text-white font-pixelade text-3xl'>
+              Failed to load White Paper. Please try again.
+            </p>
+          </div>
+        )}
+        <iframe
+          src='/Pixa White Paper.pdf'
+          className={`w-full h-screen ${
+            isLoading || hasError ? 'hidden' : 'block'
+          }`}
+          onLoad={(e) => {
+            console.log('iframe loaded', e)
+            setIsLoading(false)
+          }}
+          onError={(e) => {
+            console.log('iframe error:', e)
+            setIsLoading(false)
+            setHasError(true)
+          }}
+        />
+      </div>
     </LandingPageLayout>
   )
 }
