@@ -11,9 +11,15 @@ const LandingPageAppBar = () => {
       <NavIcon className='hidden' />
       <div className='hidden md:flex items-center gap-[36px]'>
         <div className='flex items-center gap-3'>
-          {/* <Link href={'#!'} className='text-[12px]'>
-                White Paper
-              </Link> */}
+          <Link
+            href={
+              'https://www.figma.com/deck/4TW4s45dfnBZoJbNbHUWDW/Pixa-White-Paper?node-id=25-102&viewport=-59%2C75%2C0.31&t=H4pWESlzcfZ0aIv2-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'
+            }
+            target='_blank'
+            className='text-[12px] hover:opacity-50'
+          >
+            White Paper
+          </Link>
           <Link
             href={'#features'}
             onClick={(e) => {
@@ -21,7 +27,7 @@ const LandingPageAppBar = () => {
               const featuresSection = document.getElementById('features')
               featuresSection?.scrollIntoView({ behavior: 'smooth' })
             }}
-            className='text-[12px]'
+            className='text-[12px] hover:opacity-50'
           >
             Features
           </Link>
