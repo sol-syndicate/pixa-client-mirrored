@@ -9,7 +9,7 @@ interface Props {
 }
 
 export default function LandingPageLayout({ children }: Props) {
-  const socials = [{ name: 'Twitter (X)', url: 'https://x.com/solana_intern' }]
+  const socials = [{ name: 'Twitter (X)', url: 'https://x.com/pixa_fun' }]
   const links = [
     { name: 'Terms of Service', url: '#!' },
     { name: 'Policy', url: '#!' },

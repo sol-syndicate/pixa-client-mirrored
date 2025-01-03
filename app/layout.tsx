@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: 'Pixa',
     type: 'website',
     images: {
-      url: 'https://pixa-pay.vercel.app/full-logo.png',
+      url: 'https://www.pixawallet.live/full-logo.png',
       alt: 'Pixa Logo',
       type: 'image/png',
     },
