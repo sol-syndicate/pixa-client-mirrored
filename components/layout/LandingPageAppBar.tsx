@@ -12,10 +12,11 @@ const LandingPageAppBar = () => {
       <Link
         href={'/white-paper'}
         // target='_blank'
-        className='text-[12px] hover:opacity-50'
+        className='md:hidden text-[12px] hover:opacity-50'
       >
         Whitepaper
       </Link>
+
       <div className='hidden md:flex items-center gap-[36px]'>
         <div className='flex items-center gap-3'>
           <Link
