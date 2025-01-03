@@ -1,4 +1,8 @@
-const NavIcon = (props: React.SVGProps<SVGSVGElement>) => {
+interface Props extends React.SVGProps<SVGSVGElement> {
+  className?: string
+}
+
+const NavIcon = ({ className, ...props }: Props) => {
   return (
     <svg
       width='18'
@@ -6,6 +10,7 @@ const NavIcon = (props: React.SVGProps<SVGSVGElement>) => {
       viewBox='0 0 18 15'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
+      className={className}
       {...props}
     >
       <path

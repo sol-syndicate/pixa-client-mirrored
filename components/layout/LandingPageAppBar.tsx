@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import NavIcon from '../icons/NavIcon'
 import Button from '../ui/Button'
 import PixaLogo from './PixaLogo'
 
@@ -10,7 +9,13 @@ const LandingPageAppBar = () => {
         <PixaLogo />
       </Link>
 
-      <NavIcon className='hidden' />
+      <Link
+        href={'/white-paper'}
+        // target='_blank'
+        className='text-[12px] hover:opacity-50'
+      >
+        Whitepaper
+      </Link>
       <div className='hidden md:flex items-center gap-[36px]'>
         <div className='flex items-center gap-3'>
           <Link
@@ -21,7 +26,7 @@ const LandingPageAppBar = () => {
             // target='_blank'
             className='text-[12px] hover:opacity-50'
           >
-            White Paper
+            Whitepaper
           </Link>
           <Link
             href={'#features'}

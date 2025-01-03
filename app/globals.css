@@ -17,13 +17,13 @@
 
 body {
   @apply text-foreground font-geologica;
-  /* background: var(--background); */
   background: linear-gradient(
       180deg,
       rgba(30, 30, 30, 0) 0%,
       rgba(244, 0, 0, 0.12) 100%
     ),
     #1e1e1e;
+  /* background: var(--background); */
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
@@ -58,4 +58,10 @@ input:-webkit-autofill:active {
 
 .shake {
   animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
 }
