@@ -3,7 +3,7 @@
 import UserProfileIcon from '@/components/icons/UserProfileIcon'
 import Button from '@/components/ui/Button'
 import Input from '@/components/ui/Input'
-import { waitlistRequests } from '@/lib/api_requests/waitlist.request'
+import { waitListRequests } from '@/lib/api_requests/waitlist.request'
 import { MailIcon } from 'lucide-react'
 import { Loading, Notify } from 'notiflix'
 import { useRef, useState } from 'react'
@@ -38,7 +38,7 @@ const HeroSection = () => {
 
     console.log('name', name)
     console.log('email', email)
-    const { success, message } = await waitlistRequests.joinWaitlist({
+    const { success, message } = await waitListRequests.joinWaitlist({
       name,
       email,
     })

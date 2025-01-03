@@ -1,7 +1,7 @@
 import { ENV } from '@/lib/constants/env.constant'
 import { GoogleTagManager } from '@next/third-parties/google'
 import { Analytics } from '@vercel/analytics/next'
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 import { Geologica, IBM_Plex_Mono, Press_Start_2P } from 'next/font/google'
 import './globals.css'
 
