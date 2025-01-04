@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: 'Pixa',
     type: 'website',
     images: {
-      url: 'https://www.pixawallet.live/meta.png',
+      url: 'https://www.pixawallet.live/meta_dark.png',
       alt: 'Pixa Logo',
       type: 'image/png',
     },
