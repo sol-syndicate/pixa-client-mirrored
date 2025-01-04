@@ -26,13 +26,13 @@ const geologica = Geologica({
 export const metadata: Metadata = {
   title: 'Pixa',
   description:
-    'A burner Solana wallet for your trading and uncertain interaction.',
+    'An all-in-one wallet for traders and degens. Empowering smarter moves with AI-driven insights.',
   openGraph: {
     locale: 'locale',
     siteName: 'Pixa',
     type: 'website',
     images: {
-      url: 'https://www.pixawallet.live/full-logo.png',
+      url: 'https://www.pixawallet.live/meta.png',
       alt: 'Pixa Logo',
       type: 'image/png',
     },
